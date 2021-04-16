@@ -3,10 +3,16 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+const items = [
+  { text: "Go to the gym", done: true },
+  { text: "Code", done: false },
+  { text: "Code Some more", done: false }
+];
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App items={items} />
   </React.StrictMode>,
   document.getElementById('root')
 );
